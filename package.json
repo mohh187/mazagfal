@@ -1,0 +1,17 @@
+{
+  "name": "mazag-fal-cafe",
+  "version": "1.0.0",
+  "description": "Immersive Mazag Fal Café 3D-inspired online menu",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "cafe",
+    "menu",
+    "3d",
+    "interactive"
+  ],
+  "author": "",
+  "license": "UNLICENSED"
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mazag Fal Café | مزاج فل كافيه</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Manrope:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="ambient-smoke"></div>
+    <div class="ambient-smoke second"></div>
+    <div class="grain-layer"></div>
+    <header class="hero" id="hero">
+      <div class="hero-content" data-depth="0.2">
+        <p class="eyebrow">Mazag Fal Café</p>
+        <h1>مزاج فل كافيه — <span>طعم المزاج</span></h1>
+        <p class="subtext">
+          Mazag Fal Café — The Taste of Mood. تجربة ثلاثية الأبعاد تحاكي شعور دخولك
+          للمقهى، مع أضواء طبيعية، دخان لطيف، وأكواب زجاجية عائمة.
+        </p>
+        <div class="hero-cta">
+          <button class="ghost">استكشف القائمة</button>
+          <button class="solid">حجز تجربة المتعة</button>
+        </div>
+        <div class="hero-highlights">
+          <div>
+            <span>+25</span>
+            <p>مشروب مميز</p>
+          </div>
+          <div>
+            <span>تجربة حسية</span>
+            <p>إضاءة طبيعية وعمق ثلاثي الأبعاد</p>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visuals">
+        <div class="floating-drink" data-depth="0.5">
+          <div class="glass"></div>
+          <div class="liquid sunset"></div>
+          <p>فرنسي فرابي</p>
+        </div>
+        <div class="floating-drink alt" data-depth="0.35">
+          <div class="glass"></div>
+          <div class="liquid jade"></div>
+          <p>موهيتو التمر الهندي</p>
+        </div>
+        <div class="floating-drink tertiary" data-depth="0.45">
+          <div class="glass"></div>
+          <div class="liquid cocoa"></div>
+          <p>جبنة في جبنة</p>
+        </div>
+      </div>
+      <a href="#categories" class="scroll-arrow" aria-label="تابع التمرير">
+        <span></span>
+      </a>
+    </header>
+
+    <section id="categories" class="categories">
+      <header>
+        <p class="eyebrow">الأقسام</p>
+        <h2>قائمة ثلاثية الأبعاد مستوحاة من الصور الأصلية</h2>
+      </header>
+      <div class="category-tabs" role="tablist"></div>
+    </section>
+
+    <main id="menu" class="menu" aria-live="polite"></main>
+
+    <template id="category-section-template">
+      <section class="category-section" aria-label=""></section>
+    </template>
+
+    <template id="drink-card-template">
+      <article class="drink-card" data-depth="0.3">
+        <div class="drink-visual">
+          <div class="podium"></div>
+          <div class="glass-shell"></div>
+          <div class="liquid"></div>
+          <div class="highlight"></div>
+        </div>
+        <div class="drink-info">
+          <div class="info-headline">
+            <h3></h3>
+            <span class="price"></span>
+          </div>
+          <p class="calories"></p>
+          <p class="description"></p>
+        </div>
+      </article>
+    </template>
+
+    <audio id="ambientAudio" loop>
+      <source src="https://cdn.pixabay.com/download/audio/2022/07/25/audio_b1b6deab96.mp3?filename=coffee-shop-ambience-11169.mp3" type="audio/mpeg" />
+    </audio>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
